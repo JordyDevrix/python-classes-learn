@@ -7,8 +7,8 @@ def main():
     car_one = Car("Mercedes", "GLS", 2023, "black")
     print(car_one.color)
     car_one.drive()
-    waardes = Reken(8, 2)
-    print(waardes.power())
+    waardes = Reken(2, 8)
+    print(waardes.substract(reverse=True))
 
 
 if __name__ == '__main__':
