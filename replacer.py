@@ -1,4 +1,4 @@
-class String:
+class String():
 
     def __init__(self, string):
         self.string = string
@@ -14,3 +14,4 @@ class String:
                 new_string += character
 
         return new_string
+

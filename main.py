@@ -9,8 +9,8 @@ def printer():
 
 
 def main():
-    waarde = String('lorum ipsum is een prachtig verhaal')
-    print(waarde.herzet('a', 'e'))
+    waarde = String("lorum ipsum is een prachtig verhaal en ik ga dat vandaag lezen")
+    print(waarde.herzet('e', 'a').herzet('i', 'a'))
 
 
 if __name__ == '__main__':
