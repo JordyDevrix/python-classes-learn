@@ -5,18 +5,24 @@
 import time
 
 
-def functionspeed(func):
+def fonction_vitesse(fonc):
     def wrapper():
+        print("Commencer...")
+        time.sleep(1.5)
         a = time.time()
-        func()
+        fonc()
         b = time.time()
-        print(b - a)
+        print("Terminer la fonction...")
+        time.sleep(.5)
+        print("Terminé")
+        time.sleep(.2)
+        print(f"Vitesse de la fonction {b - a}")
         return 0
     return wrapper
 
 
-@functionspeed
-def my_function():
+@fonction_vitesse
+def mon_fonction() -> int:
     for i in range(2000):
         b: int = int(i / 3)
         for c in range(b):
@@ -24,4 +30,4 @@ def my_function():
             return c
 
 
-my_function()
+mon_fonction()
